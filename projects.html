@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Các dự án đã làm – Lại Đức Thanh Tùng, Developer." />
+  <title>Projects · Lại Đức Thanh Tùng</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add("view-projects");</script>
+</head>
+<body>
+  <!--
+    Trang Projects dùng chung một document với trang chủ (index.html#projects)
+    để thẻ <audio> không bị tải lại → nhạc chạy liền khi chuyển qua lại.
+    Nội dung dự án nằm trong index.html, dữ liệu nằm trong script.js.
+  -->
+  <main>
+    <section class="projects projects-page">
+      <div class="container">
+        <div class="projects-head">
+          <p class="eyebrow">Projects</p>
+          <h2>Những gì tôi đã làm</h2>
+          <p class="projects-note">Đang mở trang Projects…</p>
+          <p><a href="index.html#projects">Bấm vào đây nếu trang không tự chuyển.</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    location.replace("index.html#projects");
+  </script>
+</body>
+</html>

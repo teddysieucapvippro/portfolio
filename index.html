@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lại Đức Thanh Tùng – Developer. Personal portfolio." />
+  <title>Lại Đức Thanh Tùng · Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Áp dụng view trước khi render để không bị nháy khi mở index.html#projects
+    if (location.hash === "#projects") document.documentElement.classList.add("view-projects");
+  </script>
+</head>
+<body>
+
+  <!-- 👇 THAY TÊN / CHỨC DANH / ẢNH CỦA BẠN Ở ĐÂY 👇 -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="#about">
+        <span class="brand-icon"></span>
+        <span class="brand-name">Lại Đức Thanh Tùng</span>
+        <span class="brand-role">/ Developer</span>
+      </a>
+      <nav class="site-nav">
+        <a class="active" href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#" id="contactTrigger">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="container hero-inner">
+
+        <aside class="profile-card reveal">
+          <!-- Ảnh đại diện: thay file image/avatar.jpg là đổi ảnh -->
+          <div class="photo">
+            <img src="image/avatar.jpg" alt="Ảnh đại diện Lại Đức Thanh Tùng" />
+          </div>
+          <h2 class="card-name">Lại Đức Thanh Tùng</h2>
+          <div class="blue-rule"></div>
+          <p class="card-role">Developer</p>
+
+          <div class="socials">
+            <a href="https://www.facebook.com/royalteddy.info/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.4V13h2.7v8h3.4Z"/></svg></a>
+            <a href="https://www.instagram.com/hee.rtd/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1Zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1 0-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.4 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c0 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .4 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1 0 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.4-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.4-2.1-.4-1.2-.1-1.6-.1-4.7-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm6.3-2a1.1 1.1 0 1 1 0 2.3 1.1 1.1 0 0 1 0-2.3Z"/></svg></a>
+            <a href="https://x.com/Teddy_120908" aria-label="X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="https://www.linkedin.com/in/thanh-t%C3%B9ng-597760248/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M6.5 8H3v13h3.5V8ZM4.8 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM21 13.6c0-3.5-1.9-5.2-4.4-5.2-2 0-2.9 1.1-3.4 1.9V8H10v13h3.5v-6.4c0-1.7.9-2.5 2-2.5s1.9.8 1.9 2.5V21H21v-7.4Z"/></svg></a>
+          </div>
+          </aside>
+
+        <div class="hero-copy reveal">
+          <h1>Hello</h1>
+          <h3 class="subheading">A developer building clean, responsive web experiences.</h3>
+          <div class="actions">
+            <a class="btn btn-primary" id="projects" href="#projects">Projects</a>
+          </div>
+          <p class="body">I'm Tùn, a developer who enjoys turning ideas into fast, easy-to-use websites and web apps. I focus on clean code, smooth interactions, and the small details that make a product feel polished.</p>
+          <p class="body">I work with HTML, CSS, JavaScript and modern frameworks to build interfaces that work well on every screen. Take a look at my projects to see what I've been working on.</p>
+          <p class="music-hint"><span class="music-dot" aria-hidden="true"></span> Nhấn dấu cách để bật tắt nhạc</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects: cùng document với Home nên nhạc không bị ngắt khi chuyển view -->
+    <section class="projects projects-page" id="projects-view">
+      <div class="container">
+        <div class="projects-head reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Những gì tôi đã làm</h2>
+          <p class="projects-note">Chọn một dự án để xem chi tiết.</p>
+          <p class="music-hint"><span class="music-dot" aria-hidden="true"></span> Nhấn dấu cách để bật tắt nhạc</p>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Popup chi tiết dự án -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-body" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Đóng">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- Popup liên hệ -->
+  <div class="modal contact-modal" id="contactModal" aria-hidden="true">
+    <div class="modal-body" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+      <button class="modal-close" aria-label="Đóng">×</button>
+      <h3 id="contactTitle">Liên hệ với mình</h3>
+      <p class="meta">Chọn một nền tảng để kết nối</p>
+      <div class="contact-apps">
+        <a class="contact-app" href="https://www.facebook.com/royalteddy.info/" target="_blank" rel="noopener">
+          <span class="app-icon fb"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.4V13h2.7v8h3.4Z"/></svg></span>
+          <span class="app-info"><b>Facebook</b><small>fb.com/royalteddy.info</small></span>
+          <span class="app-arrow">↗</span>
+        </a>
+        <a class="contact-app" href="https://www.instagram.com/hee.rtd/" target="_blank" rel="noopener">
+          <span class="app-icon ig"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1Zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1 0-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.4 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c0 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .4 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1 0 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.4-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.4-2.1-.4-1.2-.1-1.6-.1-4.7-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm6.3-2a1.1 1.1 0 1 1 0 2.3 1.1 1.1 0 0 1 0-2.3Z"/></svg></span>
+          <span class="app-info"><b>Instagram</b><small>@hee.rtd</small></span>
+          <span class="app-arrow">↗</span>
+        </a>
+        <a class="contact-app" href="https://www.tiktok.com/@hee.rtd" target="_blank" rel="noopener">
+          <span class="app-icon tt"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07Z"/></svg></span>
+          <span class="app-info"><b>TikTok</b><small>@hee.rtd</small></span>
+          <span class="app-arrow">↗</span>
+        </a>
+        <a class="contact-app" href="https://zalo.me/0788092008" target="_blank" rel="noopener">
+          <span class="app-icon zalo">Z</span>
+          <span class="app-info"><b>Zalo</b><small>078 809 2008</small></span>
+          <span class="app-arrow">↗</span>
+        </a>
+        <a class="contact-app" href="https://discord.gg/EQTkmyAvNn" target="_blank" rel="noopener">
+          <span class="app-icon discord"><svg viewBox="0 0 24 24"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.43 3l-.25.5a18.3 18.3 0 0 1 4.4 1.4A16.9 16.9 0 0 0 12 2.7c-2.4 0-4.7.4-6.86 1.2a18.3 18.3 0 0 1 4.4-1.4L9.3 3a19.8 19.8 0 0 0-4.9 1.37C1.86 8.4 1.06 12.35 1.46 16.25a19.9 19.9 0 0 0 6 3.03l.72-1.18c-.86-.32-1.68-.72-2.45-1.2l.6-.47a14.2 14.2 0 0 0 12.16 0l.6.47c-.77.48-1.59.88-2.45 1.2l.72 1.18a19.9 19.9 0 0 0 6-3.03c.48-4.53-.78-8.44-3.04-11.88ZM8.55 14.34c-1.18 0-2.15-1.08-2.15-2.4 0-1.32.95-2.4 2.15-2.4 1.2 0 2.16 1.09 2.15 2.4 0 1.32-.95 2.4-2.15 2.4Zm6.9 0c-1.18 0-2.15-1.08-2.15-2.4 0-1.32.95-2.4 2.15-2.4 1.2 0 2.16 1.09 2.15 2.4 0 1.32-.95 2.4-2.15 2.4Z"/></svg></span>
+          <span class="app-info"><b>Discord</b><small>discord.gg/EQTkmyAvNn</small></span>
+          <span class="app-arrow">↗</span>
+        </a>
+        <a class="contact-app" href="https://github.com/teddysieucapvippro" target="_blank" rel="noopener">
+          <span class="app-icon github"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></span>
+          <span class="app-info"><b>GitHub</b><small>github.com/teddysieucapvippro</small></span>
+          <span class="app-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h4>Call</h4>
+        <p>078-809-2008</p>
+      </div>
+      <div>
+        <h4>Write</h4>
+        <p>laiducthanhtung@gmail.com</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="https://www.facebook.com/royalteddy.info/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.4V13h2.7v8h3.4Z"/></svg></a>
+          <a href="https://www.instagram.com/hee.rtd/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1Z"/></svg></a>
+          <a href="https://x.com/Teddy_120908" aria-label="X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.linkedin.com/in/thanh-t%C3%B9ng-597760248/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M6.5 8H3v13h3.5V8ZM4.8 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM21 13.6c0-3.5-1.9-5.2-4.4-5.2-2 0-2.9 1.1-3.4 1.9V8H10v13h3.5v-6.4c0-1.7.9-2.5 2-2.5s1.9.8 1.9 2.5V21H21v-7.4Z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 by Lại Đức Thanh Tùng
+    </div>
+  </footer>
+
+  <!-- Nhạc nền: bật/tắt bằng phím Space (xem script.js) -->
+  <audio id="bgMusic" src="assets/music.mp3" loop preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
